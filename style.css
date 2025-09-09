@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +16,7 @@ header {
     height: 180px;
     background-color: #380000;
     color: #fffccb;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Dancing Script", cursive;
     font-size: 50px;
     text-align: center;
     align-items: center;
@@ -29,6 +30,18 @@ header {
         font-size: 28px;
         height: 120px;
         text-indent: 10px;
+    }
+
+    .cards a {
+        font-size: 22px  !important ; /* Smaller text */
+        height: 60px;         /* Less height */
+        width: 95%;           /* Use more width for mobile */
+        padding: 0 10px;      /* Add horizontal padding */
+    }
+
+    .cards a i {
+        font-size: 30px;      /* Smaller icon */
+        margin-right: 8px;    /* Less space between icon and text */
     }
 }
 
@@ -47,7 +60,7 @@ header {
     z-index: 999;
     width: 80%;
     height: 100px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 20px;
@@ -66,4 +79,8 @@ a {
 .cards a:hover {
     color: #bfbd96;
     background-color: #380000;
+}
+
+.cards a i {
+    margin-right: 16px;
 }
